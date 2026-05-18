@@ -1,14 +1,9 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import { WagmiProvider } from './WagmiProvider';
 import { QueryProvider } from './QueryProvider';
 import { type State } from 'wagmi';
-
-const RainbowKitProvider = dynamic(
-  () => import('./RainbowKitProvider').then(m => m.RainbowKitProvider),
-  { ssr: false }
-);
+import { RainbowKitProvider } from './RainbowKitProvider';
 
 interface ProvidersProps {
   children: React.ReactNode;
