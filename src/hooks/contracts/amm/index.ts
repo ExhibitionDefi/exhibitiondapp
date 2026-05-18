@@ -6,7 +6,6 @@ export { useRemoveLiquidity }                    from './useRemoveLiquidity';
 export { usePoolReserves }                       from './usePoolReserves';
 export { usePoolStats }                          from './usePoolStats';
 export { useLPEarnings }                         from './useLPEarnings';
-export { useTWAP }                               from './useTWAP';
 export { useUserPortfolio }                      from './useUserPortfolio';
 export { useAllPools }                           from './useAllPools';
 export { useLPBalance }                          from './useLPBalance';
