@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+  <defs>
+    <linearGradient id="grad-ex" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00cfff"></stop>
+      <stop offset="33%" stop-color="#8ee9ff"></stop>
+      <stop offset="33%" stop-color="#f0f0f0"></stop>
+      <stop offset="66%" stop-color="#bfbfbf"></stop>
+      <stop offset="66%" stop-color="#ffb45a"></stop>
+      <stop offset="100%" stop-color="#ff7e00"></stop>
+    </linearGradient>
+  </defs>
+
+  <g font-family="Arial Black, sans-serif" font-weight="900" font-size="56" fill="url(#grad-ex)" dominant-baseline="middle" text-anchor="middle">
+
+    <!-- Left E -->
+    <text x="36" y="52">E</text>
+
+    <!-- Center X -->
+    <text x="50" y="52">X</text>
+
+    <!-- Right mirrored E -->
+    <text x="-64" y="52" transform="scale(-1,1)">E</text>
+
+  </g>
+
+</svg>

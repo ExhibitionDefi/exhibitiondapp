@@ -1,0 +1,44 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Left Bracket -->
+  <path fill="#15c6e6" d="
+    M48 72
+    H104
+    V100
+    H76
+    V156
+    H104
+    V184
+    H48
+    Z
+  "></path>
+
+  <!-- Right Bracket -->
+  <path fill="#fa7e09" d="
+    M208 72
+    H152
+    V100
+    H180
+    V156
+    H152
+    V184
+    H208
+    Z
+  "></path>
+
+  <!-- Center X -->
+  <polygon fill="#ffffff" points="
+      90,72
+      118,72
+      166,184
+      138,184
+  "></polygon>
+
+  <polygon fill="#ffffff" points="
+      138,72
+      166,72
+      118,184
+      90,184
+  "></polygon>
+
+</svg>

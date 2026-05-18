@@ -1,0 +1,22 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Left Bracket -->
+    <path d="M64 72 H116
+             M64 72 V184
+             M64 184 H116" stroke="#15c6e6" stroke-width="18"></path>
+
+    <!-- Right Bracket -->
+    <path d="M140 72 H192
+             M192 72 V184
+             M140 184 H192" stroke="#fa7e09" stroke-width="18"></path>
+
+    <!-- Center X -->
+    <line x1="116" y1="76" x2="140" y2="180" stroke="#ffffff" stroke-width="20"></line>
+
+    <line x1="116" y1="180" x2="140" y2="76" stroke="#ffffff" stroke-width="20"></line>
+
+  </g>
+
+</svg>
