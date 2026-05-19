@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { WagmiProvider } from './WagmiProvider';
 import { QueryProvider } from './QueryProvider';
+import { type State } from 'wagmi';
 
 const RainbowKitProvider = dynamic(
   () => import('./RainbowKitProvider').then(m => m.RainbowKitProvider),
@@ -11,11 +12,12 @@ const RainbowKitProvider = dynamic(
 
 interface ProvidersProps {
   children: React.ReactNode;
+  initialState?: State;
 }
 
-export function Providers({ children }: ProvidersProps) {
+export function Providers({ children, initialState }: ProvidersProps) {
   return (
-    <WagmiProvider>
+    <WagmiProvider initialState={initialState}>
       <QueryProvider>
         <RainbowKitProvider>
           {children}
