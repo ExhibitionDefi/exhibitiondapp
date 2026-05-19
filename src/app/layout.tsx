@@ -11,9 +11,6 @@ import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { CreateLaunchModal } from '@/components/launch/wizard';
-import { cookies } from 'next/headers';
-import { cookieToInitialState } from 'wagmi';
-import { wagmiConfig } from '@/lib/wagmi';
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -25,21 +22,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const cookieStore = await cookies();
-  const cookieHeader = cookieStore.getAll()
-    .map(c => `${c.name}=${c.value}`)
-    .join('; ');
-  const initialState = cookieToInitialState(wagmiConfig, cookieHeader);
-
   return (
     <html lang="en" className={cn("dark font-sans", geist.variable)}>
       <body suppressHydrationWarning>
-        <Providers initialState={initialState}>
+        <Providers>
           <TooltipProvider>
             <Navbar />
             <CreateLaunchModal />

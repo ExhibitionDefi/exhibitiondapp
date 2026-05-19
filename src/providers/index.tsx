@@ -1,20 +1,25 @@
 'use client';
 
-import { WagmiProvider } from './WagmiProvider';
-import { QueryProvider } from './QueryProvider';
-import { type State } from 'wagmi';
-import { RainbowKitProvider } from './RainbowKitProvider';
+import { WagmiProvider }                        from './WagmiProvider';
+import { QueryProvider }                        from './QueryProvider';
+import { RainbowKitProvider, darkTheme }        from '@rainbow-me/rainbowkit';
+import { AuthProvider }                         from './AuthProvider';
+import { nexusTestnet }                         from '@/lib/wagmi';
 
-interface ProvidersProps {
-  children: React.ReactNode;
-  initialState?: State;
-}
+const theme = darkTheme({
+  accentColor:           '#15c6e6',
+  accentColorForeground: '#0A0A0A',
+  borderRadius:          'medium',
+  fontStack:             'system',
+  overlayBlur:           'small',
+});
 
-export function Providers({ children, initialState }: ProvidersProps) {
+export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <WagmiProvider initialState={initialState}>
+    <WagmiProvider>
       <QueryProvider>
-        <RainbowKitProvider>
+        <RainbowKitProvider initialChain={nexusTestnet} theme={theme}>
+          <AuthProvider />
           {children}
         </RainbowKitProvider>
       </QueryProvider>
