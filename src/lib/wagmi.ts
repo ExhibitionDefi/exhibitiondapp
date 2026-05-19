@@ -2,8 +2,8 @@ import { createConfig, http } from 'wagmi';
 import { defineChain } from 'viem';
 import { connectorsForWallets } from '@rainbow-me/rainbowkit';
 import {
-  metaMaskWallet, rainbowWallet, okxWallet,
-  walletConnectWallet, trustWallet,
+  metaMaskWallet, rainbowWallet, coinbaseWallet,
+  walletConnectWallet, trustWallet, okxWallet,
 } from '@rainbow-me/rainbowkit/wallets';
 import { EventEmitter } from 'events';
 
@@ -28,8 +28,8 @@ export const nexusTestnet = defineChain({
 
 const connectors = connectorsForWallets(
   [
-    { groupName: 'Recommended', wallets: [okxWallet, rainbowWallet, metaMaskWallet] },
-    { groupName: 'More',        wallets: [trustWallet, walletConnectWallet] },
+    { groupName: 'Recommended', wallets: [metaMaskWallet, rainbowWallet, coinbaseWallet ] },
+    { groupName: 'More',        wallets: [trustWallet, walletConnectWallet, okxWallet] },
   ],
   {
     appName:   'Exhibition',
