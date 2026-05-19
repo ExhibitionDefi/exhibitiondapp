@@ -239,8 +239,8 @@ Successful  → Refundable  — owner misses liquidity deadline; anyone calls re
 ## Supported Wallets
 
 - MetaMask
-- OKX Wallet
 - Rainbow
+- CoinbaseWallet
 - Trust Wallet
 - WalletConnect (all compatible wallets)
 
