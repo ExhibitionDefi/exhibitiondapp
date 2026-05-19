@@ -1,16 +1,15 @@
-'use client'
+'use client';
 
-import { WagmiProvider as WagmiProviderBase, type State } from 'wagmi';
+import { WagmiProvider as WagmiProviderBase } from 'wagmi';
 import { wagmiConfig } from '@/lib/wagmi';
 
 interface Props {
-  children:      React.ReactNode;
-  initialState?: State;                                   
+  children: React.ReactNode;
 }
 
-export function WagmiProvider({ children, initialState }: Props) {
+export function WagmiProvider({ children }: Props) {
   return (
-    <WagmiProviderBase config={wagmiConfig} initialState={initialState}>
+    <WagmiProviderBase config={wagmiConfig}>
       {children}
     </WagmiProviderBase>
   );

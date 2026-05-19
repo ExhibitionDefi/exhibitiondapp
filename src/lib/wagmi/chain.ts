@@ -12,8 +12,8 @@ export const nexusTestnet = defineChain({
     decimals: 18,
   },
   rpcUrls: {
-    default: { http: ['/api/rpc'] },
-    public:  { http: ['/api/rpc'] },
+    default: { http: [process.env.NEXT_PUBLIC_NEXUS_TESTNET_RPC_URL!] },
+    public:  { http: [process.env.NEXT_PUBLIC_NEXUS_TESTNET_RPC_URL!] },
   },
   blockExplorers: {
     default: {

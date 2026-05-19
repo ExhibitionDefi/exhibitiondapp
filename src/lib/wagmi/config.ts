@@ -26,7 +26,7 @@ export const wagmiConfig = createConfig({
   chains: [nexusTestnet],
   connectors,
   transports: {
-    [nexusTestnet.id]: http('/api/rpc'),
+    [nexusTestnet.id]: http(),
   },
   ssr: true,
   storage: createStorage({
