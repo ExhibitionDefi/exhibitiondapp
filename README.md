@@ -4,7 +4,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black.svg)
-![Network](https://img.shields.io/badge/network-Nexus%20Testnet-purple.svg)
+![Network](https://img.shields.io/badge/network-ARC%20Testnet-purple.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ***Deterministic primary market infrastructure for an enshrined financial system.***
