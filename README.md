@@ -9,7 +9,7 @@
 
 ***Deterministic primary market infrastructure for an enshrined financial system.***
 
-**[Live App →](https://app.exhibitiondefi.xyz)**
+**[Live App →](https://exhibition.perfectinformationlabs.com)**
 
 </div>
 
@@ -77,11 +77,6 @@ Three core principles guide the system:
 ## Network
 
 | Property | Value |
-|---|---|
-| Network | Nexus Testnet |
-| Chain ID | 3945 |
-| RPC | https://testnet.rpc.nexus.xyz |
-| Explorer | https://testnet.explorer.nexus.xyz |
 
 ---
 
